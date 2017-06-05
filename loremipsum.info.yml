@@ -1,0 +1,6 @@
+name: "Lorem Ipsum"
+type: module
+description: "Generating dummy content"
+package: Caetsu
+core: 8.x
+configure: loremipsum.form

@@ -1,0 +1,33 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+function loremipsum_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    case 'help.page.loremipsum':
+      return t("Help for this?! Are you kidding me?!");
+      break;
+
+    default:
+      # code...
+      break;
+  }
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+function loremipsum_theme($existing, $type, $theme, $path) {
+  $variables = array(
+    'loremipsum' => array(
+      'variables' => array(
+        'source_text' => NULL,
+      ),
+      'template' => 'loremipsum',
+    ),
+  );
+  return $variables;
+}
+

@@ -1,0 +1,6 @@
+loremipsum.form:
+  title: "Lorem Ipsum Settings"
+  description: "Configure settings for the Lorem Ipsum module."
+  route_name: loremipsum.form
+  parent: "system.admin_config_development"
+

@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\user\RoleInterface;
+
+
+function loremipsum_install() {
+  user_role_change_permissions(RoleInterface::ANONYMOUS_ID, [
+    'generate lorem ipsum' => true
+  ]);
+}
